@@ -115,6 +115,11 @@ void callback(const std_msgs::String &msg)
   }
   else if (emotion_name == "anger")
   {
+   for(i = 0; i < NUM_LEDS; i++) {   
+      leds.setPixelColor(i, leds.Color(colorMap[ANGER].r,colorMap[ANGER].g,colorMap[ANGER].b));
+    } 
+    leds.show(); 
+    delay(1000);
   }
   else if (emotion_name == "rage")
   {
