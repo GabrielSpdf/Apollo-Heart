@@ -24,7 +24,7 @@ roslaunch display_emotions display_emotions.launch
 
 ## Comando para iniciar o programa no arduino:
 ```
-rososrun rosserial_python serial_node.py /dev/ttyACM0
+rosrun rosserial_python serial_node.py /dev/ttyACM0
 ```
 ## Publicar uma mensagem no tópico /emotion
 
