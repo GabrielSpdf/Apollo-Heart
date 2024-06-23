@@ -71,12 +71,12 @@ void change_color(const std_msgs::String& msg){
 			uint8_t b = colorMap[i].b;
       
 
-      // Set the color for each LED in the ring
+			// Set the color for each LED in the ring
 			for (int j = 0; j < NUM_LEDS; j++){
 				leds.setPixelColor(j, leds.Color(r, g, b));
 			}
       
-      delay(3200);
+			delay(3200);
 			leds.show();
 			delay(2000);
 			return;
@@ -94,7 +94,7 @@ void setup(){
 	Serial.begin(57600);   // Start serial communication
 	nh.initNode();         // Initialize ROS node
 
-  // Create a ROS subscriber to listen for emotion messages
+	// Create a ROS subscriber to listen for emotion messages
 	ros::Subscriber<std_msgs::String> sub("/utbots/display_emotions/emotion", callback);
 
 	nh.subscribe(sub);   // Subscribe to the topic
@@ -103,7 +103,7 @@ void setup(){
 }
 
 void loop(){
-  // Set a default color for each LED in the ring
+	// Set a default color for each LED in the ring
 	for(i = 0; i < NUM_LEDS; i++){   
 		leds.setPixelColor(i, leds.Color(10, 10, 10));
 	}
@@ -113,7 +113,7 @@ void loop(){
 	nh.spinOnce();    // Handle ROS communication
 	delay(100);       // Wait for 100 milliseconds
 
-  //change_color("rage");
-  //delay(2000);
+	//change_color("rage");
+	//delay(2000);
 }
 
