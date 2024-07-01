@@ -3,9 +3,7 @@
 
 Este repositório contém um código para controlar um anel de LEDs WS2812 (NeoPixel) com base em mensagens de emoções recebidas via ROS (Robot Operating System). O projeto utiliza a biblioteca Adafruit NeoPixel para manipulação dos LEDs e integra a comunicação ROS para receber e processar as mensagens de emoções. 
 
-[Read this page in English](https://github.com/GabrielSpdf/Apollo-Heart/blob/main/README-EN.md?plain=1)
-
-[Leia esta página em português](https://github.com/GabrielSpdf/Apollo-Heart/blob/main/README-PT.md?plain=1)
+[Read this page in English](https://github.com/GabrielSpdf/Apollo-Heart/blob/main/README-EN.md)
 
 ---
 
