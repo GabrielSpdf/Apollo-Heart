@@ -1,9 +1,8 @@
 # Emotion-Based LED Display Using ROS and NeoPixel
 
-[Read this page in English](https://github.com/GabrielSpdf/Apollo-Heart/blob/main/README-EN.md?plain=1)
-[Leia esta página em português](https://github.com/GabrielSpdf/Apollo-Heart/blob/main/README-PT.md?plain=1)
-
 This repository contains code to control a WS2812 (NeoPixel) LED ring based on emotion messages received via ROS (Robot Operating System). The project uses the Adafruit NeoPixel library for LED manipulation and integrates ROS communication to receive and process emotion messages.
+
+[Leia esta página em português](https://github.com/GabrielSpdf/Apollo-Heart/blob/main/README.md)
 
 ---
 
