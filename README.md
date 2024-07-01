@@ -10,6 +10,8 @@ Este repositório contém um código para controlar um anel de LEDs WS2812 (NeoP
 1. [Funcionalidades](#-funcionalidades)
 2. [Dependências](#-dependências)
 3. [Como Usar](#-como-usar)
+4. [Demonstração](#-demonstração)
+5. [Possíveis Melhorias](#-possíveis-melhorias)
 
 
 ## *🔵 Funcionalidades*
@@ -46,4 +48,26 @@ rostopic pub /utbots/display_emotions/emotion std_msgs/String "data: 'joy'"
 ```
 
 ## *🟣 Demonstração*
+
+A seguir está a demonstração do uso do projeto com as emoções **TRUST** e **RAGE**, respectivamente:
+
+<div style="display: flex; flex-direction: row; justify-content: center;">
+  <div style="margin: 10px; text-align: center;">
+    <img src="assets/video1.gif" alt="" width="500" height="300"/>
+    <img src="assets/video0.gif" alt="" width="500" height="300"/>
+  </div>
+</div>
+
+## *🔴 Possíveis Melhorias*
+### Sincronização
+No momento em que a face do robo muda de cor, a cor do coração deveria acomapanhar essa mudança
+
+### Pulsar cor enquanto espera alguma ação
+Afim de melhorar a aparência e a ideia do coração em estado de repouso, seria ideal adicionar uma pulsação da cor do coração tal como o coração na realidade
+
+### Transição entre as cores do mesmo espectro
+É imprescindível que, tal como a face do robo transicione entre as cores de acordo com o Plutchik's Wheel of Emotions, o coração deveria também transicionar entre as cores. 
+
+> [!NOTE]
+> Na pasta do projeto, existe um arquivo chamado **for_future**, o qual foi deixado como base para implementar a transição entre as cores
 
